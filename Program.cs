@@ -18,7 +18,6 @@ public class Unicodegenerator
     {
         string currentYim = "res\\currentYim.txt";
 
-        // 在下面一行添加未加入的中文字符
         string chstwraw = File.ReadAllText(currentYim);
         int[] unicodeArray = ChsToUnicode(chstwraw);
 
