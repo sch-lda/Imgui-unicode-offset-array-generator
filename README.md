@@ -15,7 +15,7 @@
 -unicode 2.sln 此程序解决方案文件
 ```
 # 如何维护
-red/currentYim.txt 存储了Yimmenu当前使用的全部中文表，我将简体一二级字表和从GTA5游戏以及yimmenu中文翻译提取出的繁体字符组合成了此文件。此程序直接读取此文件用于生成偏移量。\
+res/currentYim.txt 存储了Yimmenu当前使用的全部中文表，我将简体一二级字表和从GTA5游戏以及yimmenu中文翻译提取出的繁体字符组合成了此文件。此程序直接读取此文件用于生成偏移量。\
 如果你发现有新的中文字符在yimmenu中显示为问号，请将对应的字符添加到red/currentYim.txt，然后运行此程序生成偏移量，将偏移量复制到Yimmenu的font_mgr.cpp的accumulative_offsets_from_0x4E00[] 数组中即可。
 # FAQ
 1.为什么要从GTA5提取中文字符？
